@@ -24,7 +24,7 @@ class SubWords {
       }
     }
   }
-  void Concat(const SubWords&  tale) {
+  void Concat(const SubWords&  tail) {
     auto new_table = table;
     Fulfill();
     for (int i = 0; i < size_; ++i) {
@@ -33,7 +33,7 @@ class SubWords {
           // if the subwords u[i, k-1] and u[k; j - 1] are accepted
           // then the concat of the subregexp must accept
           // u[i, j - 1]
-          if(new_table[i][k] && tale.Get(k, j)) {
+          if(new_table[i][k] && tail.Get(k, j)) {
             table[i][j] = true;
             break;
           }
