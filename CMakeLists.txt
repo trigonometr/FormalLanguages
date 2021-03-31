@@ -3,4 +3,4 @@ project(Algorithm)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Algorithm main.cpp CFGrammar.cpp CFGrammar.h LanguageChecker.cpp LanguageChecker.h Characters.h Characters.cpp)
+add_executable(Algorithm tests.cpp CFGrammar.cpp CFGrammar.h LanguageChecker.cpp LanguageChecker.h Characters.h Characters.cpp)
